@@ -14,8 +14,8 @@ Project components consist of:
 ## Project Versions:
   * Target SDK version: 34
   * Minimum SDK version: 30
-  * Kotlin version: 1.9.10
-  * Gradle version: 8.1.2
+  * Kotlin version: 1.9.20
+  * Gradle version: 8.1.4
 
 ## References:
  * EndPoint: https://docs.spacexdata.com/?version=latest#16c58b5e-44de-4183-b858-0fae51d242a5
