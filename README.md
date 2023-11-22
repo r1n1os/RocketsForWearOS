@@ -13,7 +13,7 @@ Project components consist of:
 
 ## Project Versions:
   * Target SDK version: 34
-  * Minimum SDK version: 27
+  * Minimum SDK version: 30
   * Kotlin version: 1.9.10
   * Gradle version: 8.1.2
 
