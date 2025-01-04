@@ -1,6 +1,6 @@
 # RocketsForWearOs
 
-This is an example project to demostrate and practise on how to implement Android Jetpack Compose WearOS app following clean Architecture.
+Rockets for Wear Os developed to showcase various modern Android development toolkits such as Android Jetpack Compose and Clean Architecture 
 
 ### Project Tech Stack:
 
