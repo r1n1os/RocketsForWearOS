@@ -15,10 +15,10 @@ Rockets for Wear Os developed to showcase various modern Android development too
   - App Architecture: [Repository](https://developer.android.com/topic/architecture/data-layer#architecture)
 
 ### Project Versions:
-  * targetSdk: 34
+  * targetSdk: 35
   * minSdk: 30
-  * Kotlin: 1.9.20
-  * Gradle: 8.1.4
+  * Kotlin: 2.1.0
+  * Gradle: 8.8.0
 
 ### Example: 
 <img src="https://github.com/r1n1os/RocketsForWearOS/assets/32699540/0d878430-5917-4634-9a69-9f92cb40702c" width="200">
