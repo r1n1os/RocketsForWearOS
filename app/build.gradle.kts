@@ -5,17 +5,19 @@ plugins {
     kotlin("kapt")
     id("com.google.devtools.ksp")
     id("com.google.dagger.hilt.android")
-    id("dagger.hilt.android.plugin")
+    //id("dagger.hilt.android.plugin")
+    id("org.jetbrains.kotlin.plugin.compose") version "2.1.0"
 }
 
 android {
     namespace = "com.example.rocketsforwearos"
-    compileSdk = 34
+    compileSdk = 35
+    buildToolsVersion = "35.0.0"
 
     defaultConfig {
         applicationId = "com.example.rocketsforwearos"
         minSdk = 30
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
         vectorDrawables {
@@ -43,25 +45,25 @@ android {
     buildFeatures {
         compose = true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.4"
+    composeCompiler {
+        reportsDestination = layout.buildDirectory.dir("compose_compiler")
+        //stabilityConfigurationFile = rootProject.layout.projectDirectory.file("stability_config.conf")
     }
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
-    buildToolsVersion = "33.0.1"
 }
 
-var hiltVersion by extra("2.48")
+var hiltVersion by extra("2.51.1")
 var hiltCompilerVersion by extra("1.0.0")
 var retrofitVersion by extra("2.9.0")
 val roomVersion by extra("2.6.0")
 val coroutines by extra("1.7.3")
 val coroutinesLifecycle by extra("2.6.2")
 val wearComposeVersion by extra("1.2.1")
-val hiltNavigationCompose by extra("1.1.0")
+val hiltNavigationCompose by extra("1.2.0")
 
 dependencies {
 
@@ -85,9 +87,9 @@ dependencies {
 
     //Hilt
     implementation("com.google.dagger:hilt-android:$hiltVersion")
-    ksp("com.google.dagger:hilt-compiler:$hiltVersion")
+    //ksp("com.google.dagger:hilt-compiler:$hiltVersion")
     ksp("com.google.dagger:hilt-android-compiler:$hiltVersion")
-    ksp("androidx.hilt:hilt-compiler:1.1.0")
+    //ksp("androidx.hilt:hilt-compiler:$hiltVersion")
 
     //Network Manager
     implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
