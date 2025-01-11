@@ -59,29 +59,29 @@ android {
 var hiltVersion by extra("2.51.1")
 var hiltCompilerVersion by extra("1.0.0")
 var retrofitVersion by extra("2.9.0")
-val roomVersion by extra("2.6.0")
-val coroutines by extra("1.7.3")
-val coroutinesLifecycle by extra("2.6.2")
-val wearComposeVersion by extra("1.2.1")
+val roomVersion by extra("2.6.1")
+val coroutines by extra("1.8.0")
+val coroutinesLifecycle by extra("2.8.7")
+val wearComposeVersion by extra("1.4.0")
 val hiltNavigationCompose by extra("1.2.0")
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("com.google.android.gms:play-services-wearable:18.1.0")
+    implementation("androidx.core:core-ktx:1.15.0")
+    implementation("com.google.android.gms:play-services-wearable:19.0.0")
     implementation("androidx.percentlayout:percentlayout:1.0.0")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
 
     //Compose
-    implementation(platform("androidx.compose:compose-bom:2023.03.00"))
+    implementation(platform("androidx.compose:compose-bom:2024.12.01"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.wear.compose:compose-material:1.2.1")
-    implementation("androidx.wear.compose:compose-foundation:1.2.1")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
-    implementation("androidx.activity:activity-compose:1.8.1")
-    implementation("androidx.compose.material3:material3:1.1.2")
+    implementation("androidx.wear.compose:compose-material:1.4.0")
+    implementation("androidx.wear.compose:compose-foundation:1.4.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
+    implementation("androidx.activity:activity-compose:1.9.3")
+    implementation("androidx.compose.material3:material3:1.3.1")
     implementation("androidx.wear.compose:compose-navigation:$wearComposeVersion")
     implementation("androidx.hilt:hilt-navigation-compose:$hiltNavigationCompose")
 
@@ -107,14 +107,14 @@ dependencies {
     // Coroutine Lifecycle Scopes
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$coroutinesLifecycle")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:$coroutinesLifecycle")
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation("androidx.core:core-ktx:1.15.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
 
     //Glide
     implementation("com.github.bumptech.glide:compose:1.0.0-beta01")
 
 
-    androidTestImplementation(platform("androidx.compose:compose-bom:2023.03.00"))
+    androidTestImplementation(platform("androidx.compose:compose-bom:2024.12.01"))
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
